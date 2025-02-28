@@ -1,0 +1,50 @@
+{
+  "dependencies": {
+    "activedirectory2": "^2.2.0",
+    "axios": "^1.8.1",
+    "bcrypt": "^5.1.1",
+    "connect-redis": "^8.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "ioredis": "^5.5.0",
+    "jsonwebtoken": "^9.0.2",
+    "ldapjs": "^3.0.7",
+    "mariadb": "^3.0.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.12.0",
+    "radius": "^1.1.4",
+    "redis": "^4.7.0",
+    "sequelize": "^6.37.5",
+    "ssh2": "^1.16.0",
+    "tacacs-plus": "^1.2.3",
+    "winston": "^3.17.0",
+    "ws": "^8.18.1",
+    "xterm": "^5.3.0"
+  },
+  "name": "tacacs-ldap-radius-backend",
+  "version": "1.0.0",
+  "description": "Backend para o sistema de integração Tacacs+ com LDAP",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "migrate": "npx sequelize-cli db:migrate",
+    "seed": "npx sequelize-cli db:seed:all",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tacacs",
+    "ldap",
+    "radius",
+    "monitoring"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "sequelize-cli": "^6.6.2"
+  }
+}
